@@ -1,0 +1,8 @@
+1.select sid,sname from student where sid in (select sid from sc group by sid having max(score)<=60);
+2. select sc.sid,sname from sc inner join student on sc.sid=student.sid group by sid having count(*)<(select count(cid) from course);
+3.select cname,count(*) from sc inner join course on sc.cid=course.cid group by sc.cid;
+4.select sc.cid,cname from sc inner join course on sc.cid=course.cid group by sc.cid having count(*)=(select count(*) from student);
+5.select sc.sid,avg(score) from sc where sid in(select sid from sc where score<60 group by sid having count(*)>2) group by sid;
+6. select a.sid,c.sname from (select sid,cid,score from sc where cid=2) a inner join (select sid,cid,score from sc where cid=1) b on a.sid=b.sid inner join student c on a.sid=c.sid where a.score<b.score;
+7.select a.sid,c.sname from (select sid,cid,score from sc where cid=2) a inner join (select sid,cid,score from sc where cid=1) b on a.sid=b.sid inner join student c on a.sid=c.sid;
+8.select a.sid,c.sname from sc a inner join (select cid from course a inner join teacher b on a.tid=b.tid where tname='Ҷƽ') b on a.cid=b.cid inner join student c on a.sid=c.sid group by sid having count(*)=0;
