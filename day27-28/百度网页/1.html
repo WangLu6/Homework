@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的百度网页</title>
+    <style>
+        #p1>a{color:black;font-size:small;margin: 10px;}
+        #p2{padding-top: 50px;padding-bottom: 100px}
+        #p3{width:500px;height: 30px;margin-top:  20px; }
+        #p4{background:#3385ff;color: white;height: 40px;font-size: 15px;}
+        p a{margin-left: 25px;margin-right: 5px;font-size: 12px;color:gray}
+        p{font-size: 12px;color:gray}
+    </style>
+    <script>
+        function fun1(){
+            document.getElementById("i1").style.display="block";
+        }
+        function fun2(){
+            document.getElementById("i1").style.display="none";
+        }
+    </script>
+</head>
+<body style="margin: 20px"; >
+<div id="i1"  style="position: absolute;top: 0;right: 0;width: 100px;height: 100%;background-color: whitesmoke;display: none">
+    <center>
+    <p style="font-size:small;color: black;margin: 20px;">更多产品</p>
+        <p style="margin-bottom: 0px"><img src="5.png" style="width: 36px;height: 36px;"></p>
+        <a style="margin-top: 0px;font-size: small" href="1.html">糯米</a>
+
+        <p style="margin-bottom: 0px"><img src="6.png" style="width: 36px;height: 36px;"></p>
+        <a style="margin-top: 0px;font-size: small" href="1.html">音乐</a>
+
+        <p style="margin-bottom: 0px"><img src="7.png" style="width: 36px;height: 36px;"></p>
+        <a style="margin-top: 0px;font-size: small" href="1.html">图片</a>
+
+        <p style="margin-bottom: 0px"><img src="8.png" style="width: 36px;height: 36px;"></p>
+        <a style="margin-top: 0px;font-size: small" href="1.html">知道</a>
+
+        <p style="margin-bottom: 0px"><img src="9.png" style="width: 36px;height: 36px;"></p>
+        <a style="margin-top: 0px;font-size: small" href="1.html">文库</a>
+
+        <p style="margin-bottom: 0px"><img src="10.png" style="width: 36px;height: 36px;"></p>
+        <a style="margin-top: 0px;font-size: small" href="1.html">排行耪</a>
+    </center>
+    <p> <a href="1.html">全部产品>></a></p>
+</div>
+    <form action="1.html">
+    <div id="p1" align="right";>
+        <a href="2.html" class="manv">新闻</a><a href="2.html">hao123</a><a href="2.html">地图</a><a href="2.html">视频</a>
+        <a href="2.html">贴吧</a><a href="2.html">学术</a><a href="2.html">登陆</a><a href="2.html">设置</a>
+        <a  onmouseover="fun1()" onmouseout="fun2()" style="background-color: #3385ff;color: white;width: 50px" href="#" >更多产品</a>
+    </div>
+    <div id="p2">
+        <center><img width="270" height="129" src="1.png">
+        <br>
+        <input  id=p3 type="text" maxlength="255" x><input id="p4" type="submit" value="   百度一下   "></center>
+    </div>
+     <div style="margin-top: 160px">
+         <center>
+             <img style="margin-bottom: 0px;width: 60px;height: 60px" src="2.png"><p style="margin-top: 0px;font-size: 13px">百度</p>
+             <p> <a style="margin-left: 0px;" href="2.html">把百度设为主页</a> <a href="2.html">关于百度</a><a href="2.html">about baidu</a><a href="2.html">百度推广</a></p>
+             <p style="margin-left: 0px;margin-right: 0px;">
+                 ©2019 Baidu
+                 <a style="margin-left: 0px;margin-right: 0px;" href="2.html">使用百度前必读</a>
+                 <a style="margin-left: 0px;margin-right: 0px;"  href="2.html">意见反馈</a>
+                 京ICP证030173号
+                 <img style="width: 14px;height: 17px;" src="4.png">
+                 <a href="2.html">京公网安备11000002000001号</a>
+                 <img style="width: 14px;height: 17px;background-position-x: -600px;background-position-y: -96px" src="3.png">
+             </p>
+         </center>
+     </div>
+    </form>
+</body>
+</html>
+
